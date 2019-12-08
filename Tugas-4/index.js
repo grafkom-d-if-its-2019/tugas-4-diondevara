@@ -340,13 +340,13 @@
 
   //translasi
   function animasiTranslasi(){
-    if (triangleX >= (0.8 - Math.abs(0.2 * 0.7 * scaleX))) arahX = -1.0;
-    else if (triangleX <= (-0.8 + Math.abs(0.2 * 0.7 * scaleX))) arahX = 1.0;
+    if (triangleX >= (0.69 - Math.abs(0.2 * 0.7 * scaleX))) arahX = -1.0;
+    else if (triangleX <= (-0.7 + Math.abs(0.2 * 0.7 * scaleX))) arahX = 1.0;
     triangleX += 0.009 * arahX;
     gl.uniform1f(xHurufLocation, triangleX);
     
-    if (triangleY >= (0.8 - (0.3 * 0.7))) arahY = -1.0;
-    else if (triangleY <= (-0.8 + (0.3 * 0.7))) arahY = 1.0;
+    if (triangleY >= (0.67 - (0.3 * 0.7))) arahY = -1.0;
+    else if (triangleY <= (-0.68 + (0.3 * 0.7))) arahY = 1.0;
     triangleY += 0.010 * arahY;
     gl.uniform1f(yHurufLocation, triangleY);
     
